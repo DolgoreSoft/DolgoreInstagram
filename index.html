@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolgore Studio | Apps</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #fdfbf7;
+            color: #333333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* 프로필 영역 */
+        .profile {
+            margin-bottom: 28px;
+        }
+
+        .profile-avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            background-color: #ffebe8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+            margin: 0 auto 16px auto;
+            box-shadow: 0 4px 12px rgba(235, 87, 87, 0.15);
+        }
+
+        .profile-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #222222;
+            margin-bottom: 6px;
+        }
+
+        .profile-subtitle {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.4;
+        }
+
+        /* 링크 카드 목록 */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            background: #ffffff;
+            border: 1.5px solid #f0e6e4;
+            border-radius: 18px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            border-color: #eb5757;
+            box-shadow: 0 6px 16px rgba(235, 87, 87, 0.12);
+        }
+
+        .app-icon {
+            font-size: 28px;
+            margin-right: 14px;
+            width: 36px;
+            text-align: center;
+        }
+
+        .app-info {
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .app-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #222222;
+            margin-bottom: 2px;
+        }
+
+        .app-desc {
+            font-size: 12px;
+            color: #888888;
+        }
+
+        .arrow {
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        /* 하단 푸터 */
+        .footer {
+            margin-top: 36px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 프로필 -->
+        <div class="profile">
+            <div class="profile-avatar">🐬</div>
+            <h1 class="profile-title">돌고래 스튜디오</h1>
+            <p class="profile-subtitle">일상에 유용한 재미를 더하는 1인 앱 개발자<br>돌고래(Dolgore)의 대표 앱 모음</p>
+        </div>
+
+        <!-- 앱 링크 목록 -->
+        <div class="links">
+            <!-- 1. Tomatodo -->
+            <a href="https://dolgoresoft.github.io/TomaTodo/" target="_blank" class="link-card">
+                <span class="app-icon">🍅</span>
+                <div class="app-info">
+                    <div class="app-name">Tomatodo (토도리스트)</div>
+                    <div class="app-desc">토마토를 으깨며 완료하는 귀여운 할 일 앱</div>
+                </div>
+                <span class="arrow">➔</span>
+            </a>
+
+            <!-- 3. 인스타그램 또는 개발 블로그/웹사이트 링크 -->
+            <a href="https://instagram.com/dolgore.devlog" target="_blank" class="link-card">
+                <span class="app-icon">📸</span>
+                <div class="app-info">
+                    <div class="app-name">개발자 인스타그램</div>
+                    <div class="app-desc">4컷 만화 & 우당탕탕 앱 개발 일기</div>
+                </div>
+                <span class="arrow">➔</span>
+            </a>
+        </div>
+
+        <!-- 푸터 -->
+        <div class="footer">
+            © Dolgore. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
